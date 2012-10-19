@@ -28,4 +28,10 @@
 
     </author>
 
+    <icon src="img/touch/icon.png" width="57" height="57"/>
+
+    <gap:splash src="img/startup/splash.png" width="320" height="460" />
+
+    <access origin="*" />
+
 </widget>
