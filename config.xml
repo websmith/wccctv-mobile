@@ -44,12 +44,6 @@
 
     <icon src="img/touch/icon_at_2x.png" width="114" height="114"/>
 
-    <icon src="img/touch/icon.png" gap:platform="android" dap:density="ldpi"/>
-
-    <icon src="img/touch/icon-72.png" gap:platform="android" dap:density="mdpi"/>
-
-    <icon src="img/touch/icon_at_2x.png" gap:platform="android" dap:density="hdpi"/>
-
 
 
     <gap:splash src="img/startup/splash.png" width="320" height="460" />
@@ -64,10 +58,7 @@
 
     <gap:splash src="img/startup/startup-tablet-portrait-retina.png" width="1536" height="2008" />
 
-        
 
     <access origin="*" />
-
-
 
 </widget>
