@@ -4,11 +4,11 @@
 
     xmlns:gap = "http://phonegap.com/ns/1.0"
 
-    id        = "tv.wccc.www"
+    id        = "Hole-in-the-Roof.wccctv-mobile"
 
     versionCode="1" 
 
-    version   = "1.0.0">
+    version   = "1.0">
 
 
     <name>wccc.tv mobile app</name>
