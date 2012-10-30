@@ -78,7 +78,7 @@ function showThumbs(videos) {
         
         var wrap2 = document.createElement('div');
         var thumblink = document.createElement('a');
-        var video = videos[this.id].thumbnail_large;
+        var video = videos[this.id].thumbnail_medium;
         var vimeo = document.getElementById('vimeo');
         var thumbnail = document.createElement('img');
         var article = document.createElement('article');
