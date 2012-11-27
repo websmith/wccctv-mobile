@@ -49,7 +49,7 @@
     <gap:splash src="img/startup/startup-tablet-portrait-retina.png" width="1536" height="2008" />
 
     
-    <preference name="stay-in-webview" value="false" />
+    <preference name="stay-in-webview" value="true" />
 
     <preference name="exit-on-suspend" value="true" />
 
