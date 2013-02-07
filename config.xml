@@ -6,9 +6,9 @@
 
     id        = "com.holeintheroof.wccctv"
 
-    versionCode="2" 
+    versionCode="3" 
 
-    version   = "1.1">
+    version   = "1.2">
 
 
     <name>WCCC.TV</name>
