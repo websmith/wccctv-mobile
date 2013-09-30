@@ -1,274 +1,137 @@
 <!DOCTYPE html>
-
 <head>
-
 <meta charset="utf-8">
-
 <title>wccc.tv</title>
-
 <meta name="description" content="Watch all the same great local programming produced by the WCCC-TV staff that is airing live, right now, on Waco’s Cable TV Channel or select from our large library of programs categorized in more than 20 different series topics and watch them on demand.">
-
 <meta name="HandheldFriendly" content="True">
-
 <meta name="MobileOptimized" content="320">
-
 <meta name="viewport" content="width=device-width">
 
-
 <!-- Stylesheets -->
-
-<link rel="stylesheet" href="css/jquery.mobile-1.1.1.min.css" />
-
+<link rel="stylesheet" href="css/jquery.mobile-1.3.2.min.css">
 <link rel="stylesheet" href="css/normalize.css">
-
 <link rel="stylesheet" href="css/main.css">
 
-
-
 <!-- Scripts -->
-
-<script src="js/jquery-1.7.1.min.js"></script>
-
-<script src="js/jquery.mobile-1.1.1.min.js"></script>
-
-<script src="js/vendor/modernizr-2.6.1.min.js"></script>
-
+<script src="js/jquery-2.0.3.min.js"></script>
+<script src="js/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/jquery.mobile-1.3.2.min.js"></script>
+<script src="js/modernizr-2.6.1.min.js"></script>
 <script src="js/vimeo.js"></script>
-
 <script src="phonegap.js"></script>
-
 </head>
 
-
-
 <body>
-
 <!-- HOME -->
-
     <div data-role="page" id="home">
-
         <header data-role="header">
-
             <img src="img/new-logo.png" alt="wccc.tv logo" class="logo">
-
         </header>
-
         <section data-role="content">
-
             <div id="stats"></div>
-
             <ul id="thumbs"><li><img src="img/loader.gif" alt="loader" width="60"></li></ul>
-
         </section>
-
         <footer data-role="footer" data-position="fixed">
-
             <nav data-role="navbar">
-
                 <ul>
-
             		<li><a href="#about" data-role="button" data-icon="info">About</a></li>
-
                     <li><a href="#live" data-role="button" data-icon="star">Live</a></li>
-
                     <li><a href="http://wccc.tv" data-role="button" data-icon="grid">Website</a></li>
-
             	</ul>
-
             </nav>
-
         </footer>
-
-    </div><!-- #home -->
-
-
-
-
+    </div>
 
 <!-- VIDEO -->
-
     <div data-role="page" id="video">
-
         <a href="#home">
-
             <header data-role="header">
-
                 <img src="img/new-logo.png" alt="wccc.tv logo" class="logo">
-
             </header>
-
         </a>
-
         <section data-role="content">
-
             <div id="vimeo"><img src="img/loader.gif" alt="loader" width="60"></div>
-
         </section>
-
         <footer data-role="footer" data-position="fixed">            
-
             <nav data-role="navbar">
-
                 <ul>
-
             		<li><a href="#home" data-role="button" data-icon="home">Home</a></li>
-
             		<li><a href="#about" data-role="button" data-icon="info">About</a></li>
-
                     <li><a href="#live" data-role="button" data-icon="star">Live</a></li>
-
             	</ul>
-
             </nav>
-
         </footer>
-
-    </div><!-- #about -->
-
-
-
-
+    </div>
 
 <!-- ABOUT -->
-
     <div data-role="page" id="about">
-
         <a href="#home">
-
             <header data-role="header">
-
                 <img src="img/new-logo.png" alt="wccc.tv logo" class="logo">
-
             </header>
-
         </a>
-
         <section data-role="content">
-
             <article class="box">
-
                 <h2>About this App</h2>
-
+                <p><em>Version 1.3</em></p>
                 <p>Check out our featured videos with the WCCC.TV (Waco City Cable Channel) app!</p>
-
                 <p>Enjoy exciting local programs and short segments on the people, places, history, events, music and more from Waco.</p>
-
                 <p>Watch our live stream to see what is airing right now (in HD) on our cable channel.</p>
-
                 <p>You can also visit our website at wccc.tv or find us on Facebook.</p>
 
-                
-
                 <ul data-role="listview" data-inset="true">
-
                     <li data-role="divider" role="heading">WCCC.TV Online</li>
-
                     <li><a href="#live">WCCC.TV Live Stream</a></li>
-
                     <li><a href="http://wccc.tv">WCCC.TV Homepage</a></li>
-
                     <li><a href="http://wccc.tv/index.php?DoThis=Albums">Select a Program</a></li>
-
                     <li><a href="http://wccc.tv/index.php?DoThis=Shorts">Select a Short Segment</a></li>
-
                     <li><a href="http://wccc.tv/index.php?DoThis=Albums#talk_shows" rel="external">Watch a Talk Show</a></li>
-
                     <li data-role="divider" role="heading">Social Media</li>
-
                     <li><a href="http://www.facebook.com/wccc.tv?ref=ts&amp;fref=ts">Visit us on Facebook</a></li>
-
                 </ul>
-
             </article>
-
         </section>
-
         <footer data-role="footer" data-position="fixed">            
-
             <nav data-role="navbar">
-
                 <ul>
-
             		<li><a href="#home" data-role="button" data-icon="home">Home</a></li>
-
                     <li><a href="#live" data-role="button" data-icon="star">Live</a></li>
-
                     <li><a href="http://wccc.tv" data-role="button" data-icon="grid">Website</a></li>
-
             	</ul>
-
             </nav>
-
         </footer>
-
-    </div><!-- #about -->
-
-    
-
-    
+    </div>
 
 <!-- LIVE -->
-
     <div data-role="page" id="live">
-
         <a href="#home">
-
             <header data-role="header">
-
                 <img src="img/new-logo.png" alt="wccc.tv logo" class="logo">
-
             </header>
-
         </a>
-
         <section data-role="content">
-
             <div id="vimeo">
-
                 <div class="wrap">
-
                     <h2>WCCC.TV Live Stream</h2>
-
-                    <video controls src="http://live-h1.frontlayer.net/fl649215/smil:live.smil/live.m3u8" width="360" height="203"></video>
-
+                    <video controls src="http://live-h1.frontlayer.net/fl649215/smil:live.smil/live.m3u8" width="100%" height="200"></video>
                     <p>Can’t see the live stream? Press the button below to stream our channel on our website:</p>
-
                     <a href="http://wccc.tv/index.php?DoThis=Live" data-role="button">View Live Stream Online</a>
-
                 </div><!-- wrap -->
-
             </div><!-- #vimeo -->
-
         </section>
-
         <footer data-role="footer" data-position="fixed">            
-
             <nav data-role="navbar">
-
                 <ul>
-
                 	<li><a href="#home" data-role="button" data-icon="home">Home</a></li>
-
                     <li><a href="#about" data-role="button" data-icon="info">About</a></li>
-
                     <li><a href="http://wccc.tv" data-role="button" data-icon="grid">Website</a></li>
-
             	</ul>
-
             </nav>
-
         </footer>
-
-    </div><!-- #live -->    
-
-    
-
-
+    </div>
 
 <!-- SCRIPTS -->
-
-    <script src="js/helper.js"></script>
+<script src="js/helper.js"></script>
 
 </body>
-
 </html>
