@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="css/jquery.mobile-1.3.2.min.css">
 <link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/video-js.min.css">
 
 <!-- Scripts -->
 <script src="js/jquery-2.0.3.min.js"></script>
@@ -18,6 +19,7 @@
 <script src="js/jquery.mobile-1.3.2.min.js"></script>
 <script src="js/modernizr-2.6.1.min.js"></script>
 <script src="js/vimeo.js"></script>
+<script src="js/video.js"></script>
 <script src="phonegap.js"></script>
 </head>
 
@@ -112,8 +114,12 @@
         <section data-role="content">
             <div id="vimeo">
                 <div class="wrap">
-                    <h2>WCCC.TV Live Stream</h2>
-                    <video controls src="http://live-h1.frontlayer.net/fl649215/smil:live.smil/live.m3u8" width="100%" height="200"></video>
+                    <h2>WCCC.TV Live Stream</h2>                    
+                    <video id="example_video_1" class="video-js vjs-default-skin"
+                    controls preload="auto" width="100%" height="200"
+                    data-setup='{"example_option":true}'
+                    src="http://live-h1.frontlayer.net/fl649215/smil:live.smil/live.m3u8">
+                    </video>
                     <p>Can’t see the live stream? Press the button below to stream our channel on our website:</p>
                     <a href="http://wccc.tv/index.php?DoThis=Live" data-role="button">View Live Stream Online</a>
                 </div><!-- wrap -->
