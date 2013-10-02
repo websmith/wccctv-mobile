@@ -111,6 +111,12 @@ textarea {
     box-sizing: border-box;
 }
 
+.loader {
+	display: block;
+	margin: auto;
+	padding: 40px 0;
+}
+
 .wrap {
     padding: 15px;
     -webkit-box-sizing: border-box;

@@ -62,67 +62,40 @@ function showThumbs(videos) {
 		thumb.setAttribute('title', videos[i].title);
         thumb.setAttribute('class', 'thumb-img');
 				
-        li.appendChild(wrap);
         wrap.appendChild(thumb);
 		wrap.appendChild(title);
 		wrap.appendChild(duration);
         wrap.appendChild(clear1);
-		li.appendChild(desc);
-        li.appendChild(clear2);
-		linkbox.appendChild(li);
+		thumbs.appendChild(li);
+		li.appendChild(linkbox);
+		linkbox.appendChild(wrap);
+		linkbox.appendChild(desc);
+		linkbox.appendChild(clear2);
     }
-    
-    $('.ui-link').click(function() {
+
+    $('.ui-link').on('click', function() {
         //return the parameter as a variable
         var param = this.href.split('=')[1];
-        
-        var wrap2 = document.createElement('div');
-        var thumblink = document.createElement('a');
-        var video = videos[this.id].thumbnail_medium;
-        var vimeo = document.getElementById('vimeo');
-        var thumbnail = document.createElement('img');
-        var article = document.createElement('article');
-        var v_title = document.createElement('h3');
-        var v_duration = document.createElement('small');
-        var v_desc = document.createElement('p');
-        var social = document.createElement('div');
-        var sm_vimeo = document.createElement('a');
-        var sm_twitter = document.createElement('a');
-        var sm_facebook = document.createElement('a');
-       
-        thumblink.setAttribute('href', videos[this.id].url);
-        thumbnail.setAttribute('src', video);
-        thumbnail.setAttribute('class', 'vid');
-        wrap2.setAttribute('class', 'wrap');
-        v_title.setAttribute('class', 'v-title');
-        v_duration.setAttribute('class', 'v-duration');
-        v_desc.setAttribute('class', 'v-desc');
-        social.setAttribute('class', 'social');
-        sm_vimeo.setAttribute('class', 'sm_vimeo');
-        sm_twitter.setAttribute('class', 'sm_twitter');
-        sm_facebook.setAttribute('class', 'sm_facebook');
-        sm_vimeo.setAttribute('href', videos[this.id].url);
-        sm_twitter.setAttribute('href', 'http://twitter.com/home?status=' + videos[this.id].title + '+' + videos[this.id].url);
-        sm_facebook.setAttribute('href', 'http://www.facebook.com/share.php?u=' + videos[this.id].url + '&title=' + videos[this.id].title);
-        
-        vimeo.innerHTML = '';
-        vimeo.appendChild(wrap2);
-        
-        wrap2.appendChild(thumblink);
-        wrap2.appendChild(article);
-        thumblink.appendChild(thumbnail);
-        article.appendChild(v_title);
-        article.appendChild(v_duration);
-        article.appendChild(social);
-        social.appendChild(sm_vimeo);
-        social.appendChild(sm_twitter);
-        social.appendChild(sm_facebook);
-        vimeo.appendChild(v_desc);
-       
-        v_title.appendChild(document.createTextNode(videos[this.id].title));
-		v_duration.appendChild(document.createTextNode(convertTime(videos[this.id].duration)));
-        v_desc.appendChild(document.createTextNode(stripQuotes(videos[this.id].description)));
-    });  
+
+		/* Poplate Video */
+		$('#vimeo').html("").append(
+		'<div class="wrap">'+
+		'<iframe src="http://player.vimeo.com/video/'+ videos[this.id].id +'?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=0&amp;color=ffffff" class="vimeo-iframe" color="ffffff" width="100%" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>'+
+		'<article><h3 class="v-title">'+videos[this.id].title+'</h3>'+
+		'<small class="v-duration">'+convertTime(videos[this.id].duration)+'</small>'+
+		'<div class="social">'+
+		'<a href="'+videos[this.id].url+'" class="sm_vimeo"></a>'+
+		'<a href="http://twitter.com/home?status=' + videos[this.id].title + '+' + videos[this.id].url + '" class="sm_twitter"></a>'+
+		'<a href="http://www.facebook.com/share.php?u=' + videos[this.id].url + '&title=' + videos[this.id].title + '" class="sm_facebook"></a>'+
+		'</div></article></div>'+
+		'<p class="v-desc">'+stripQuotes(videos[this.id].description)+'</p>');
+			
+		$(document).ready(function(){
+			var ratio = 2.1;
+			var outerwidth = $('#video').width();
+			$('.vimeo-iframe').attr("height", outerwidth/ratio);
+		});
+	});  
 }
 
 // Call init function when the page loads
