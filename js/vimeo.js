@@ -63,7 +63,6 @@ function showThumbs(videos) {
 			var ratio = 2.1;
 			var outerwidth = $('#video').width();
 			var livewidth = $('#live-player').width();
-			console.log(livewidth);
 			$('.vimeo-iframe').attr("height", outerwidth/ratio);
 			$('#live-player').attr("height", livewidth/ratio);
 		});
