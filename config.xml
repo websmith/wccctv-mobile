@@ -39,6 +39,7 @@
     <gap:splash src="img/startup/startup-ipad-large-portrait.png" width="1536" height="2008" />
 
     <preference name="phonegap-version" value="2.9.0" />
+	<preference name="ios-statusbarstyle" value="black-opaque" />
 	<preference name="permissions" value="none" />
     <preference name="stay-in-webview" value="true" />
     <preference name="exit-on-suspend" value="true" />
