@@ -43,4 +43,5 @@
     <preference name="ios-statusbarstyle" value="black-opaque" />
     <preference name="permissions" value="none" />
     <preference name="exit-on-suspend" value="false" />
+	<preference name="stay-in-webview" value="false" />
 </widget>
