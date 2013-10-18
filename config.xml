@@ -43,5 +43,4 @@
     <preference name="ios-statusbarstyle" value="black-opaque" />
     <preference name="permissions" value="none" />
     <preference name="exit-on-suspend" value="false" />
-    <access origin="*" browserOnly="true"/>
 </widget>
