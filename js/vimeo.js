@@ -75,4 +75,11 @@ $(document).on('pageshow', '#live',  function(){
 	$('#live-player').attr("height", livewidth/ratio);
 });
 
+$(document).on('click', ".external", function (e) {
+    e.preventDefault();
+    var targetURL = $(this).attr("href");
+
+    window.open(targetURL, "_system");
+});
+
 window.onload = init;
