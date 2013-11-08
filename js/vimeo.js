@@ -54,8 +54,8 @@ function showThumbs(videos) {
 		'<small class="v-duration">'+convertTime(videos[this.id].duration)+'</small>'+
 		'<div class="social">'+
 		'<a href="'+videos[this.id].url+'" class="sm_vimeo external"></a>'+
-		'<a href="http://twitter.com/home?status=' + videos[this.id].title + '+' + videos[this.id].url + '" class="sm_twitter external"></a>'+
-		'<a href="http://www.facebook.com/share.php?u=' + videos[this.id].url + '&title=' + videos[this.id].title + '" class="sm_facebook external"></a>'+
+		'<a href="//twitter.com/home?status=' + videos[this.id].title + '+' + videos[this.id].url + '" class="sm_twitter external"></a>'+
+		'<a href="//www.facebook.com/share.php?u=' + videos[this.id].url + '&title=' + videos[this.id].title + '" class="sm_facebook external"></a>'+
 		'</div></article></div>'+
 		'<p class="v-desc">'+stripQuotes(videos[this.id].description)+'</p>');
 			
