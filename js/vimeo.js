@@ -72,7 +72,13 @@ function showThumbs(videos) {
 $(document).on('pageshow', '#live',  function(){
 	var ratio = 2.1;
 	var livewidth = $('#live').width();
-	$('#live-player').attr("height", livewidth/ratio);
+	$('.livestream').attr("height", livewidth/ratio);
+	
+	$(window).resize(function(){
+		var ratio = 2.1;
+		var livewidth = $('#live').width();
+		$('.livestream').attr("height", livewidth/ratio);
+	});
 });
 
 $(document).on('click', ".external", function (e) {
