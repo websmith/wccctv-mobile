@@ -39,6 +39,7 @@
 
     <preference name="phonegap-version" value="3.3.0" />
 	<preference name="orientation" value="default" />
+	<preference name="fullscreen" value="true" />
     <preference name="permissions" value="none" />
     <preference name="exit-on-suspend" value="true" />
     <preference name="stay-in-webview" value="false" />
