@@ -37,8 +37,8 @@
     <gap:splash src="img/startup/startup-ipad-large-landscape.png" gap:platform="ios" width="2048" height="1496" />
     <gap:splash src="img/startup/startup-ipad-large-portrait.png" width="1536" height="2008" />
 
-    <preference name="phonegap-version" value="2.9.0" />
-    <preference name="ios-statusbarstyle" value="black-opaque" />
+    <preference name="phonegap-version" value="3.3.0" />
+	<preference name="orientation" value="default" />
     <preference name="permissions" value="none" />
     <preference name="exit-on-suspend" value="true" />
     <preference name="stay-in-webview" value="false" />
